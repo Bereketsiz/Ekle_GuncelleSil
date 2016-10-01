@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Kaydet_Sil_Güncelle_Denemesi</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table style="width:100%">
+            <tr>
+                <td style="width: 184px">
+                    <asp:Label ID="lblSayfaBaslik" runat="server" BackColor="#FFDCB9" Font-Bold="True" Font-Size="20pt" ForeColor="#CC0000"></asp:Label>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 184px">
+                    <asp:HyperLink ID="hplAnaSayfa" runat="server" NavigateUrl="Default.aspx">Ana Sayfa</asp:HyperLink>
+                </td>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 184px">
+                    <asp:HyperLink ID="hplGiris" runat="server" NavigateUrl="Giris.aspx">Giriş</asp:HyperLink>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 184px">
+                    <asp:HyperLink ID="hplYonetim" runat="server" NavigateUrl="Yonetim.aspx">Yönetim</asp:HyperLink>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 184px">
+                    <asp:HyperLink ID="hplCikis" runat="server" NavigateUrl="Cikis.aspx">Çıkış</asp:HyperLink>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 184px"></td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>
